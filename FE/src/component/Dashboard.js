@@ -4,11 +4,33 @@ import { User, Flame } from 'lucide-react';
 const Dashboard = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-white relative">
-      {/* ZenQuest Logo Banner - Full Width */}
-      <div className="bg-gray-800 px-6 pt-6 pb-4">
-        <h1 className="text-2xl font-bold text-white text-left">
-          <span className="text-orange-400">Zen</span>Quest
-        </h1>
+      {/* Beautiful ZenQuest Header */}
+      <div className="relative bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 px-6 pt-8 pb-8">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg">
+              <span className="text-2xl">✨</span>
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold text-white">
+                <span className="text-orange-400">Zen</span>Quest
+              </h1>
+              <p className="text-gray-300 text-sm mt-1">Learn • Grow • Achieve</p>
+            </div>
+          </div>
+          
+          {/* Notification & Time */}
+          <div className="text-right">
+            <div className="w-10 h-10 bg-white bg-opacity-10 backdrop-blur-sm rounded-full flex items-center justify-center mb-2">
+              <span className="text-orange-400 text-lg">🔔</span>
+            </div>
+            <p className="text-gray-300 text-xs">Good Evening</p>
+          </div>
+        </div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-4 right-20 w-32 h-32 bg-orange-400 bg-opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute top-8 right-40 w-20 h-20 bg-purple-400 bg-opacity-10 rounded-full blur-2xl"></div>
       </div>
 
       {/* Main Content Container */}
